@@ -24,3 +24,22 @@
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
+
+/* 文章页背景 */
+#aside_content,.card-widget,#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),._posts>#page,._posts>#post,.read-mode{
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: var(--backdrop-filter);
+} 
+[data-theme=dark] #nav,
+[data-theme=dark] .layout_page>div:first-child:not(.recent-posts),
+[data-theme=dark] .layout_post>#post {
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: var(--backdrop-filter);
+}
+div#post {
+    /* 最后一个值为透明度可以自己指定 */
+    background: rgba(255, 255, 255, .7);
+    /* 透明模糊亚克力 */
+    backdrop-filter: var(--backdrop-filter);
+}
+
