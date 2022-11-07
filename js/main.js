@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollTask = btf.throttle(() => {
         const currentTop = window.scrollY || document.documentElement.scrollTop
         const isDown = scrollDirection(currentTop)
-        if (currentTop > 56) {
+      if (currentTop > 56){
           if (isDown) {
             if ($header.classList.contains('nav-visible')) $header.classList.remove('nav-visible')
             if (isChatBtnShow && isChatShow === true) {

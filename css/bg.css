@@ -31,14 +31,20 @@
     backdrop-filter: var(--backdrop-filter);
 } 
 [data-theme=dark] #nav,
+[data-theme=dark] #recent-posts>.recent-post-item,
+[data-theme=dark] ._posts>#page,
+[data-theme=dark] ._posts>#post,
+[data-theme=dark] #aside_content,
+[data-theme=dark] div#post,
+[data-theme=dark] .card-widget,
 [data-theme=dark] .layout_page>div:first-child:not(.recent-posts),
 [data-theme=dark] .layout_post>#post {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: var(--backdrop-filter);
 }
 div#post {
     /* 最后一个值为透明度可以自己指定 */
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, 0.8);
     /* 透明模糊亚克力 */
     backdrop-filter: var(--backdrop-filter);
 }
@@ -248,7 +254,6 @@ div#runtime {
     font-family: 'HYTMR', 'Microsoft Yahei', 'PingFang SC', 'SimSun' !important;
     font-size: 14px
 }
-
 .wv-n-h-now-aqi-item {
     display: none;
 }
